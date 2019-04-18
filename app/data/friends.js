@@ -13,9 +13,8 @@ var friends = [
         "5",
         "1",
         "2",
-        "5",
-        "4",
-        "1"
+        "5"
+        
       ]
     },
     {
@@ -29,9 +28,8 @@ var friends = [
         "3",
         "2",
         "2",
-        "1",
-        "3",
-        "2"
+        "1"
+        
       ]
     },
     {
@@ -46,8 +44,7 @@ var friends = [
         "1",
         "4",
         "2",
-        "5",
-        "5"
+        
       ]
     },
     {
@@ -61,9 +58,8 @@ var friends = [
         "2",
         "1",
         "3",
-        "2",
-        "2",
-        "3"
+        "2"
+        
       ]
     },
     {
@@ -77,9 +73,7 @@ var friends = [
         "5",
         "2",
         "5",
-        "3",
-        "1",
-        "4"
+        "3"
       ]
     },
     {
@@ -93,14 +87,13 @@ var friends = [
         "2",
         "2",
         "5",
-        "5",
-        "5",
         "5"
+        
       ]
     }
   
   ];
   
-  // Here we export the array. This makes it accessible to other files using require.
+  
   module.exports = friends;
   
