@@ -1,3 +1,9 @@
+/* UPDATE: Sorry for the delay. I have this one figured out.
+ *  Should have working version by Sunday with my own code 
+ * Some of this is cut  and paste. */
+
+
+
 
 /* This is just a standard express server as demonstrated in class.
  * I had initially used bodyparser,  but it out to use this
