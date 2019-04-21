@@ -21,7 +21,7 @@
 
 <body>
 
-  <div class="container">
+  <div class="container" style="width: 80vw; background-color: gray; border: 4px solid blue" >
 
     <h2>Survey Questions</h2>
     <hr>
@@ -129,8 +129,7 @@
     <br>
 
     <!-- Submit Button -->
-    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
-     Submit</button>
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
 
     
 
@@ -148,7 +147,7 @@
         </div>
         <div class="modal-body">
           <h2 id="match-name"></h2>
-        
+          
         </div>
         <div class="modal-footer">
           <button class="btn btn-default" data-dismiss="modal">Close</button>
@@ -206,7 +205,7 @@
       if (validateForm()) {
        
         var userData = {
-          /*name: $("#name").val(), */
+         
           
           scores: [
             $("#q1").val(),
@@ -226,6 +225,7 @@
 
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
           $("#match-name").text(data.name);
+         
       
 
           // Show the modal with the best match

@@ -1,9 +1,9 @@
 /* This is the data to populate the stuff  to start. The format is just copied and  pasted  from example
-  * Need to add photos */
+  * Need to add photos. But base functionality working at this point.   */
 
 var friends = [
     {
-      name: "Ahmed",
+      name: "Jasmine",
       photo: "",
       scores: [
         "5",
