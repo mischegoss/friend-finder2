@@ -1,10 +1,9 @@
-/* This is the data to populate the stuff  to start. The format is just copied and  pasted  from example
-  * Need to add photos. But base functionality working at this point.   */
+/* This is the data to populate the stuff  to start. All photos are the same in this sample set :)   */
 
 var friends = [
     {
       name: "Jasmine",
-      photo: "http://bit.ly/2UMQmWR",
+      photo: "https://media1.tenor.com/images/f6fe8d1d0463f4e51b6367bbecf56a3e/tenor.gif?itemid=6198981",
       scores: [
         "5",
         "1",
@@ -21,7 +20,7 @@ var friends = [
     },
     {
       name: "Andrew",
-      photo: "http://bit.ly/2UMQmWR",
+      photo: "https://media1.tenor.com/images/f6fe8d1d0463f4e51b6367bbecf56a3e/tenor.gif?itemid=6198981",
       scores: [
         "4",
         "2",
@@ -38,7 +37,7 @@ var friends = [
     },
     {
       name: "Tom",
-      photo: "http://bit.ly/2UMQmWR",
+      photo: "https://media1.tenor.com/images/f6fe8d1d0463f4e51b6367bbecf56a3e/tenor.gif?itemid=6198981",
       scores: [
         "5",
         "2",
@@ -55,7 +54,7 @@ var friends = [
     },
     {
       name: "Cornelia",
-      photo: "http://bit.ly/2UMQmWR",
+      photo: "https://media1.tenor.com/images/f6fe8d1d0463f4e51b6367bbecf56a3e/tenor.gif?itemid=6198981",
       scores: [
         "3",
         "3",
@@ -72,7 +71,7 @@ var friends = [
     },
     {
       name: "Joe",
-      photo: "http://bit.ly/2UMQmWR",
+      photo: "https://media1.tenor.com/images/f6fe8d1d0463f4e51b6367bbecf56a3e/tenor.gif?itemid=6198981",
       scores: [
         "4",
         "3",
@@ -88,7 +87,7 @@ var friends = [
     },
     {
       name: "Sarah",
-      photo: "http://bit.ly/2UMQmWR",
+      photo: "https://media1.tenor.com/images/f6fe8d1d0463f4e51b6367bbecf56a3e/tenor.gif?itemid=6198981",
       scores: [
         "4",
         "4",
