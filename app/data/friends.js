@@ -4,7 +4,7 @@
 var friends = [
     {
       name: "Jasmine",
-      photo: "",
+      photo: "http://bit.ly/2UMQmWR",
       scores: [
         "5",
         "1",
@@ -13,13 +13,15 @@ var friends = [
         "5",
         "1",
         "2",
-        "5"
+        "5",
+        "1",
+        "1"
         
       ]
     },
     {
       name: "Andrew",
-      photo: "",
+      photo: "http://bit.ly/2UMQmWR",
       scores: [
         "4",
         "2",
@@ -28,13 +30,15 @@ var friends = [
         "3",
         "2",
         "2",
+        "1",
+        "1",
         "1"
         
       ]
     },
     {
       name: "Tom",
-      photo: "",
+      photo: "http://bit.ly/2UMQmWR",
       scores: [
         "5",
         "2",
@@ -43,13 +47,15 @@ var friends = [
         "4",
         "1",
         "4",
-        "2",
+        "1",
+        "1",
+        "1"
         
       ]
     },
     {
       name: "Cornelia",
-      photo: "",
+      photo: "http://bit.ly/2UMQmWR",
       scores: [
         "3",
         "3",
@@ -58,13 +64,15 @@ var friends = [
         "2",
         "1",
         "3",
-        "2"
+        "1",
+        "1",
+        "1"
         
       ]
     },
     {
       name: "Joe",
-      photo: "",
+      photo: "http://bit.ly/2UMQmWR",
       scores: [
         "4",
         "3",
@@ -73,12 +81,14 @@ var friends = [
         "5",
         "2",
         "5",
-        "3"
+        "1",
+        "1",
+        "1"
       ]
     },
     {
       name: "Sarah",
-      photo: "",
+      photo: "http://bit.ly/2UMQmWR",
       scores: [
         "4",
         "4",
@@ -87,7 +97,9 @@ var friends = [
         "2",
         "2",
         "5",
-        "5"
+        "1",
+        "1",
+        "1"
         
       ]
     }

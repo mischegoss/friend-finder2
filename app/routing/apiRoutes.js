@@ -1,57 +1,50 @@
 
+/* This follows sample, help from classmate */
+var path = require('path');
 
-var friends = require("../data/friends");
+
+var friends = require('../data/friends.js');
 
 
 module.exports = function(app) {
-  
-  app.get("/api/friends", function(req, res) {
-    res.json(friends);
-  });
+	
 
-  
-  app.post("/api/friends", function(req, res) {
-    
-    var bestMatch = {
-      name: "",
-      photo: "",
-      friendDifference: 1000
-    };
+	
+	app.get('/api/friends', function(req, res) {
+		res.json(friends);
+	});
 
-    
-    var userData = req.body;
-    var userScores = userData.scores;
+	app.post('/api/friends', function(req, res) {
+		
+		var userInput = req.body;
+	
 
-   
-    var totalDifference;
+		var userResponses = userInput.scores;
+		
+		var matchName = '';
+		var matchImage = '';
+		var totalDifference = 10000; 
 
-    
-    for (var i = 0; i < friends.length; i++) {
-      var currentFriend = friends[i];
-      totalDifference = 0;
+	
+		for (var i = 0; i < friends.length; i++) {
+		
+			var diff = 0;
+			for (var j = 0; j < userResponses.length; j++) {
+				diff += Math.abs(friends[i].scores[j] - userResponses[j]);
+			}
+		
+			if (diff < totalDifference) {
+			
 
-      console.log(currentFriend.name);
+				totalDifference = diff;
+				matchName = friends[i].name;
+				matchImage = friends[i].photo;
+			}
+		}
 
-      for (var j = 0; j < currentFriend.scores.length; j++) {
-        var currentFriendScore = currentFriend.scores[j];
-        var currentUserScore = userScores[j];
 
-        
-        totalDifference += Math.abs(parseInt(currentUserScore) - parseInt(currentFriendScore));
-      }
+		friends.push(userInput);
 
-   
-      if (totalDifference <= bestMatch.friendDifference) {
-       
-        bestMatch.name = currentFriend.name;
-        bestMatch.photo = currentFriend.photo;
-        bestMatch.friendDifference = totalDifference;
-      }
-    }
-
-    
-    friends.push(userData);
-
-    res.json(bestMatch);
-  });
+		res.json({status: 'OK', matchName: matchName, matchImage: matchImage});
+	});
 };
